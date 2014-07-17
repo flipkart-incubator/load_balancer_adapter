@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.email       = 'yogi@flipkart.com'
   s.files       = Dir["lib/*"]
   s.homepage    = 'http://github.com/flipkart/load_balancer_adapter'
-  s.add_runtime_dependency "activerecord"
+  s.add_dependency "activerecord", ">= 3.1.0", "< 3.2.0"
   s.add_development_dependency "test-unit"
 end
