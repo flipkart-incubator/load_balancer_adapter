@@ -1,5 +1,7 @@
 # load_balancer_adapter
 
+*Compatible with ActiveRecord 3.1.x only.*
+
 Load balances connections across multiple database hosts.
 
 The adapter cycles through hosts, creating a connection to a new host each time.
