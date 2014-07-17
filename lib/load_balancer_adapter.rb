@@ -1,0 +1,2 @@
+require 'active_record/connection_adapters/load_balancer_adapter'
+require 'active_record/connection_adapters/connection_pool_patch'
