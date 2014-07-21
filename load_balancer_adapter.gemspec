@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'load_balancer_adapter'
-  s.version     = '0.1'
+  s.version     = '0.2'
   s.date        = '2014-07-17'
   s.summary     = "Load balances connections across multiple database hosts"
   s.description = "Load balances connections across multiple database hosts"
