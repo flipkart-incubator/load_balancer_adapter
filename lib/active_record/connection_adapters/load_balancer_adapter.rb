@@ -4,9 +4,9 @@ module ActiveRecord
 
     # Round-robins through the list of :hosts, returning a new connection each time
     def self.load_balancer_connection(config)
+      actual_adapter = config[:actual_adapter]
       hosts = config[:hosts]
       if Array === hosts
-        actual_adapter = config[:actual_adapter]
         raise ":actual_adapter required in config e.g. config[:actual_adapter] => 'mysql'" unless actual_adapter
 
         require "active_record/connection_adapters/#{actual_adapter}_adapter"
